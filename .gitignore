@@ -1,5 +1,6 @@
 libs
 obj
+*.swp
 
 Makefile
 test-driver

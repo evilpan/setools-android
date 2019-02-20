@@ -28,7 +28,14 @@
 #include <apol/util.h>
 
 #include <assert.h>
+// #if defined(__APPLE__)
+// #include <libkern/OSByteOrder.h>
+// #define bswap_16(x) OSSwapInt16(x)
+// #define bswap_32(x) OSSwapInt32(x)
+// #define bswap_64(x) OSSwapInt64(x)
+// #else
 #include <byteswap.h>
+// #endif
 #include <ctype.h>
 #include <errno.h>
 #include <stdio.h>

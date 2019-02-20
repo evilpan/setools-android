@@ -20,23 +20,27 @@ This tool injects allow rules into binary SELinux kernel policies.
 [2]: http://bitbucket.org/joshua_brindle/sepolicy-inject
 
 
-## Building for Android
+## Android
 
 Ensure that you have installed _android-ndk_ properly. Then run:
 
-    ndk-build
+```
+ndk-build
+```
 
 
-## Building for Linux
+## Linux
 
 setools-android can be built for *nix platform as stand-alone binaries without
 external dependencies. This build simplifies analysis of Android's sepolicy
 after dumping it from a device.
 
-    autoreconf -i
-    ./configure
-    make
-    sudo cp ./seinfo ./sesearch ./sepolicy-inject /usr/local/bin  # optional
+```sh
+# apt-get install autoconf automake libtool
+autoreconf -i
+./configure
+make
+```
 
 
 ## Usage
